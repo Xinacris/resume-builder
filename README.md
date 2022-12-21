@@ -1,2 +1,3 @@
-# resume-builder
-This is a resume builder website for Advanced Internet Programming course.
+# Resume Builder
+
+This is a project for our Advanced Internet Programming class with @batuhanozkandev.
