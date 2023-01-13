@@ -40,85 +40,85 @@
 .e9_3 {
   background-color: white;
   font-family: "Poppins", sans-serif;
-  box-shadow: 0px 0.9990851879119873px 0.9990851879119873px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
   width: 606px;
   height: 831px;
   position: absolute;
 }
 .e0_34 {
   color: rgba(0, 0, 0, 1);
-  width: 189.0770721435547px;
+  width: 189px;
   height: 17px;
   position: absolute;
-  left: 393.88970947265625px;
-  top: 782.2025756835938px;
+  left: 393px;
+  top: 782px;
   font-family: Poppins;
   text-align: left;
-  font-size: 8.325711250305176px;
+  font-size: 8px;
   letter-spacing: 0;
   line-height: px;
 }
 .e0_35 {
   color: rgba(0, 0, 0, 1);
-  width: 125.63501739501953px;
+  width: 125px;
   height: 17px;
   position: absolute;
-  left: 217.1765899658203px;
-  top: 782.2025756835938px;
+  left: 217px;
+  top: 782px;
   font-family: Poppins;
   text-align: center;
-  font-size: 8.325711250305176px;
+  font-size: 8px;
   letter-spacing: 0;
   line-height: px;
 }
 .e0_36 {
   color: rgba(0, 0, 0, 1);
-  width: 88.41909790039062px;
+  width: 88px;
   height: 17px;
   position: absolute;
-  left: 39.58880615234375px;
-  top: 780.9534912109375px;
+  left: 39px;
+  top: 780px;
   font-family: Poppins;
   text-align: center;
-  font-size: 8.325711250305176px;
+  font-size: 8px;
   letter-spacing: 0;
   line-height: px;
 }
 .e0_37 {
   color: rgba(0, 0, 0, 1);
-  width: 146.8656463623047px;
+  width: 146px;
   height: 28px;
   position: absolute;
-  left: 256.764892578125px;
-  top: 152.67385864257812px;
+  left: 256px;
+  top: 152px;
   font-family: Poppins;
   text-align: left;
-  font-size: 18.732845306396484px;
-  letter-spacing: 0.22479422390460968;
+  font-size: 18px;
+  letter-spacing: 0.2px;
 }
 .e0_38 {
   color: rgba(0, 0, 0, 1);
-  width: 108.65060424804688px;
+  width: 108px;
   height: 17px;
   position: absolute;
-  left: 256.0157470703125px;
-  top: 210.697998046875px;
+  left: 256px;
+  top: 210px;
   font-family: Poppins;
   text-align: left;
-  font-size: 8.325711250305176px;
+  font-size: 8px;
   letter-spacing: 0;
   line-height: px;
 }
 .e0_39 {
   color: rgba(0, 0, 0, 1);
-  width: 116.39346313476562px;
+  width: 116px;
   height: 17px;
   position: absolute;
-  left: 256.2657470703125px;
-  top: 192.46533203125px;
+  left: 256px;
+  top: 192px;
   font-family: Poppins;
   text-align: left;
-  font-size: 12.488568305969238px;
+  font-size: 12px;
   letter-spacing: 0;
   line-height: px;
 }
@@ -128,7 +128,7 @@
   height: 17px;
   position: absolute;
   left: 256.0157470703125px;
-  top: 226.6834716796875px;
+  top: 233.6834716796875px;
   font-family: Poppins;
   text-align: left;
   font-size: 8.325711250305176px;
@@ -141,7 +141,7 @@
   height: 17px;
   position: absolute;
   left: 256.2657470703125px;
-  top: 243.16845703125px;
+  top: 248.16845703125px;
   font-family: Poppins;
   text-align: left;
   font-size: 8.325711250305176px;
@@ -180,7 +180,7 @@
   height: 17px;
   position: absolute;
   left: 423.363037109375px;
-  top: 226.93310546875px;
+  top: 233.93310546875px;
   font-family: Poppins;
   text-align: left;
   font-size: 8.325711250305176px;
@@ -193,7 +193,7 @@
   height: 17px;
   position: absolute;
   left: 423.6121826171875px;
-  top: 243.16845703125px;
+  top: 248.16845703125px;
   font-family: Poppins;
   text-align: left;
   font-size: 8.325711250305176px;
@@ -458,7 +458,7 @@
   height: 17px;
   position: absolute;
   left: 255.76612854003906px;
-  top: 655.673828125px;
+  top: 645.673828125px;
   font-family: Poppins;
   text-align: left;
   font-size: 12.488568305969238px;
@@ -471,7 +471,7 @@
   height: 17px;
   position: absolute;
   left: 256.01580810546875px;
-  top: 689.673828125px;
+  top: 700.673828125px;
   font-family: Poppins;
   text-align: left;
   font-size: 8.325711250305176px;
@@ -484,7 +484,7 @@
   height: 17px;
   position: absolute;
   left: 256.2657470703125px;
-  top: 705.6738891601562px;
+  top: 715.6738891601562px;
   font-family: Poppins;
   text-align: left;
   font-size: 8.325711250305176px;
@@ -558,7 +558,7 @@
   height: 17px;
   position: absolute;
   left: 423.61224365234375px;
-  top: 655.673828125px;
+  top: 645.673828125px;
   font-family: Poppins;
   text-align: left;
   font-size: 12.488568305969238px;
@@ -571,7 +571,7 @@
   height: 17px;
   position: absolute;
   left: 423.363037109375px;
-  top: 689.673828125px;
+  top:700.673828125px;
   font-family: Poppins;
   text-align: left;
   font-size: 8.325711250305176px;
@@ -584,7 +584,7 @@
   height: 17px;
   position: absolute;
   left: 423.61224365234375px;
-  top: 705.6738891601562px;
+  top: 715.6738891601562px;
   font-family: Poppins;
   text-align: left;
   font-size: 8.325711250305176px;
