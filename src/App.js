@@ -5,6 +5,7 @@ const ref = createRef();
 
 
 function App() {
+  // useState içinde alan isimleri tanımlandı.
   const [values, setValues] = useState({
     nameSurname: "",
     job: "",
@@ -53,16 +54,19 @@ function App() {
     footerMail: "",
     footerWebpage: "",
   });
+  // onChange fonksiyonu useState'de tanımlanan değişkenleri doğru input-label eşleştirmesi yaparak değiştirdi. 
   const onChange = (e) => {
     const { name, value } = e.target;
     setValues((prevState) => ({ ...prevState, [name]: value }));
   };
+  const pdfName=values.nameSurname+".pdf"
 
   return (
     <>
       <div class="grid grid-cols-3 gap-3">
         <div className="pl-1 pr-1  columns-3 col">
           <div class="relative pb-2">
+            {/* Inputta harf tuşlandığında hangi alanı değiştireceği name ve value kısmında tanımlandı. geri kalan kısım görsel. */}
             <input
               type="text"
               id="floating_filled"
@@ -73,6 +77,7 @@ function App() {
               class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=" "
             />
+            {/* Bu labellar da input'un üstüne gelip boş durumdayken placeholder görevi görüyor, bir şey yazıldığında da yukarıda yazıp hangi alanda işlem yapıldığını gösteriyor. */}
             <label
               for="floating_filled"
               class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
@@ -905,10 +910,10 @@ function App() {
             </div>
             <div className="Custom">
               <span class="e0_70">{values.customField}</span>
-              <span class="e0_61">{values.customFieldTextOne}</span>
-              <span class="e0_62">{values.customFieldTextTwo}</span>
-              <span class="e0_63">{values.customFieldTextThree}</span>
-              <span class="e0_64">{values.customFieldTextFour}</span>
+              <span class="e0_64">{values.customFieldTextOne}</span>
+              <span class="e0_61">{values.customFieldTextTwo}</span>
+              <span class="e0_62">{values.customFieldTextThree}</span>
+              <span class="e0_63">{values.customFieldTextFour}</span>
             </div>
             <div className="References">
               <span class="e0_71">REFERENCES</span>
@@ -933,7 +938,8 @@ function App() {
           </div>
         </div>
         <div>
-          <ReactToPdf targetRef={ref} filename="my-div.pdf">
+          {/* Bu tag ise projenin en önemli kısmı olan hazırladığımız Resume'yi pdf olarak exportlamamıza yarıyor. */}
+          <ReactToPdf targetRef={ref} filename={pdfName}>
             {({ toPdf }) => <button onClick={toPdf}>Download as PDF</button>}
           </ReactToPdf>
         </div>
