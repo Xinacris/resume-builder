@@ -937,7 +937,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="text-center pl-28">
           {/* Bu tag ise projenin en önemli kısmı olan hazırladığımız Resume'yi pdf olarak exportlamamıza yarıyor. */}
           <ReactToPdf targetRef={ref} filename={pdfName}>
             {({ toPdf }) => <button onClick={toPdf}>Download as PDF</button>}
