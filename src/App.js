@@ -3,7 +3,6 @@ import { createRef, useState } from "react";
 import ReactToPdf from "react-to-pdf";
 const ref = createRef();
 
-
 function App() {
   // useState içinde alan isimleri tanımlandı.
   const [values, setValues] = useState({
@@ -54,17 +53,17 @@ function App() {
     footerMail: "",
     footerWebpage: "",
   });
-  // onChange fonksiyonu useState'de tanımlanan değişkenleri doğru input-label eşleştirmesi yaparak değiştirdi. 
+  // onChange fonksiyonu useState'de tanımlanan değişkenleri doğru input-label eşleştirmesi yaparak değiştirdi.
   const onChange = (e) => {
     const { name, value } = e.target;
     setValues((prevState) => ({ ...prevState, [name]: value }));
   };
-  const pdfName=values.nameSurname+".pdf"
+  const pdfName = values.nameSurname + ".pdf";
 
   return (
     <>
       <div class="grid grid-cols-3 gap-3">
-        <div className="pl-1 pr-1  columns-3 col">
+        <div className="pl-1 pr-1  columns-3 col Inputs">
           <div class="relative pb-2">
             {/* Inputta harf tuşlandığında hangi alanı değiştireceği name ve value kısmında tanımlandı. geri kalan kısım görsel. */}
             <input
@@ -855,8 +854,8 @@ function App() {
             </label>
           </div>
         </div>
-        <div  className="pr-10">
-          <div class="e9_3 relative" ref={ref}>
+        <div className="pr-10 CV">
+          <div class="e9_3" ref={ref}>
             <div className="NameJob">
               <span class="e0_73">{values.nameSurname}</span>
               <span class="e0_74">{values.job}</span>
@@ -898,7 +897,7 @@ function App() {
               <span class="e0_49">{values.workTitleOne}</span>
               <span class="e0_50">{values.workDescOne}</span>
               <span class="e0_51">
-                {values.workNameTwo}| {values.workYearsTwo}
+                {values.workNameTwo} | {values.workYearsTwo}
               </span>
               <span class="e0_52">{values.workTitleTwo}</span>
               <span class="e0_53">{values.workDescTwo}</span>
@@ -937,11 +936,20 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="text-center pl-28">
+        <div className="text-center pt-[50%] PDF">
           {/* Bu tag ise projenin en önemli kısmı olan hazırladığımız Resume'yi pdf olarak exportlamamıza yarıyor. */}
-          <ReactToPdf targetRef={ref} filename={pdfName}>
-            {({ toPdf }) => <button onClick={toPdf}>Download as PDF</button>}
-          </ReactToPdf>
+          <span className="pt-32">
+            <ReactToPdf targetRef={ref} filename={pdfName}>
+              {({ toPdf }) => (
+                <button
+                  onClick={toPdf}
+                  class="bg-gray-700 hover:bg-gray-500 text-gray-200 font-bold py-2 px-4 rounded-full"
+                >
+                  Download as PDF
+                </button>
+              )}
+            </ReactToPdf>
+          </span>
         </div>
       </div>
     </>
